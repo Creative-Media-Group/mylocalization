@@ -1,8 +1,8 @@
 name: mylocalization
-description: "A new Flutter package project."
+description: A module for localization
 version: 0.0.1
-homepage:
-
+homepage: https://github.com/Creative-Media-Group/mylocalization
+repository: https://github.com/Creative-Media-Group/mylocalization
 environment:
   sdk: ^3.5.4
   flutter: ">=1.17.0"
