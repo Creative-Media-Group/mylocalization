@@ -4,11 +4,13 @@ import 'package:mylocalization/mylocalization.dart';
 void main() {
   runApp(const MyApp());
 }
-void myfunction(){
+
+void myfunction() {
   MyLocalization mylocalization = MyLocalization();
   String greeting = mylocalization.current();
   print(greeting);
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -64,7 +66,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
