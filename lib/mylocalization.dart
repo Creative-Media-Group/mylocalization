@@ -10,8 +10,8 @@ class MyLocalization {
     return language;
   } // int addOne(int value) => value + 1;}
 }
-void main(){
-  MyLocalization mylocalization = MyLocalization();
-  String greeting = mylocalization.current();
-  print(greeting);
-}
+//void main(){
+//  MyLocalization mylocalization = MyLocalization();
+//  String greeting = mylocalization.current();
+//  print(greeting);
+//}

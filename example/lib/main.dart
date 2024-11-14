@@ -5,7 +5,9 @@ void main() {
   runApp(const MyApp());
 }
 void myfunction(){
-  
+  MyLocalization mylocalization = MyLocalization();
+  String greeting = mylocalization.current();
+  print(greeting);
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
