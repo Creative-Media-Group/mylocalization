@@ -4,9 +4,7 @@ import 'package:mylocalization/mylocalization.dart';
 void main() {
   runApp(const MyApp());
 }
-void myfunction() {
-    print(myLocalization());
-  }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -62,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -108,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: const FloatingActionButton(
-        onPressed: myfunction,
+        onPressed: MyLocalization.new,
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.

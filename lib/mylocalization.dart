@@ -1,11 +1,17 @@
 library mylocalization;
 
-import 'dart:ui';
-import "package:flutter/widgets.dart";
+import 'dart:io';
+import "package:intl/intl.dart";
 
-String myLocalization() {
-  WidgetsFlutterBinding.ensureInitialized();
-  var language = PlatformDispatcher.instance.locale.languageCode;
-  //print(language);
-  return language; // int addOne(int value) => value + 1;
+class MyLocalization {
+  String current() {
+    var language = Intl.getCurrentLocale();
+    //print(language);
+    return language;
+  } // int addOne(int value) => value + 1;}
+}
+void main(){
+  MyLocalization mylocalization = MyLocalization();
+  String greeting = mylocalization.current();
+  print(greeting);
 }
