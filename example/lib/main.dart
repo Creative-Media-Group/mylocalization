@@ -4,7 +4,9 @@ import 'package:mylocalization/mylocalization.dart';
 void main() {
   runApp(const MyApp());
 }
-
+void myfunction(){
+  
+}
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -107,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: const FloatingActionButton(
-        onPressed: MyLocalization.new,
+        onPressed: myfunction,
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
