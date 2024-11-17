@@ -1,15 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:intl/intl_browser.dart';
-import 'package:intl/intl_standalone.dart';
-import 'package:intl/intl_default.dart';
+//import 'package:intl/intl.dart';
+//import 'package:intl/intl_browser.dart';
+import 'dart:io';
+//import 'package:platform/platform.dart';
+
 void main() {
   runApp(const MyApp());
 }
 
 String myfunction() {
-  findSystemLocale();
-  return Intl.systemLocale;
+  if (Platform.isWindows) {
+    //findSystemLocale();
+    return "Windows";
+  } else if (Platform.isLinux) {
+    return "Linux";
+  } else if (Platform.isAndroid) {
+    return "Android";
+  } else if (Platform.isFuchsia) {
+    return "Fuchsia";
+  } else if (Platform.isIOS) {
+    return "IOS";
+  } else if (Platform.isMacOS) {
+    return "MacOS";
+  }
 }
 
 class MyApp extends StatelessWidget {
