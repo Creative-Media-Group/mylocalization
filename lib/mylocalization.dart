@@ -12,6 +12,3 @@ class MyLocalization {
     return languageCode;//countryCode.isNotEmpty ? '$languageCode-$countryCode' : languageCode;
   }
 }
-void main(){
-  print(MyLocalization());
-}
