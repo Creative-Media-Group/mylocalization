@@ -5,10 +5,10 @@ void main() {
   runApp(const MyApp());
 }
 
-void myfunction() {
+String myfunction() {
   MyLocalization mylocalization = MyLocalization();
   String greeting = mylocalization.current();
-  print(greeting);
+  return greeting.toString();
 }
 
 class MyApp extends StatelessWidget {
@@ -105,17 +105,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              myfunction(),
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
       ),
-      floatingActionButton: const FloatingActionButton(
-        onPressed: myfunction,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
