@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:mylocalization/mylocalization.dart';
-
+import 'package:intl/intl.dart';
+import 'package:intl/intl_browser.dart';
+import 'package:intl/intl_standalone.dart';
+import 'package:intl/intl_default.dart';
 void main() {
   runApp(const MyApp());
 }
 
 String myfunction() {
-  MyLocalization mylocalization = MyLocalization();
-  String greeting = mylocalization.toString();
-  return greeting;
+  findSystemLocale();
+  return Intl.systemLocale;
 }
 
 class MyApp extends StatelessWidget {
