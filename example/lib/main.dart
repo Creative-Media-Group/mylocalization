@@ -7,8 +7,8 @@ void main() {
 
 String myfunction() {
   MyLocalization mylocalization = MyLocalization();
-  String greeting = mylocalization.current();
-  return greeting.toString();
+  String greeting = mylocalization.toString();
+  return greeting;
 }
 
 class MyApp extends StatelessWidget {
