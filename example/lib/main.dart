@@ -2,27 +2,12 @@ import 'package:flutter/material.dart';
 //import 'package:intl/intl.dart';
 //import 'package:intl/intl_browser.dart';
 import 'dart:io';
+
+import 'package:mylocalization/mylocalization.dart';
 //import 'package:platform/platform.dart';
 
 void main() {
   runApp(const MyApp());
-}
-
-String myfunction() {
-  if (Platform.isWindows) {
-    //findSystemLocale();
-    return "Windows";
-  } else if (Platform.isLinux) {
-    return "Linux";
-  } else if (Platform.isAndroid) {
-    return "Android";
-  } else if (Platform.isFuchsia) {
-    return "Fuchsia";
-  } else if (Platform.isIOS) {
-    return "IOS";
-  } else if (Platform.isMacOS) {
-    return "MacOS";
-  }
 }
 
 class MyApp extends StatelessWidget {
@@ -117,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              myfunction(),
+              MyLocalization().getDeviceLocale(),
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
