@@ -8,6 +8,6 @@ class MyLocalization {
     String languageCode = locale.languageCode;
     // String countryCode = locale.countryCode.toString();
 
-    return languageCode;//countryCode.isNotEmpty ? '$languageCode-$countryCode' : languageCode;
+    return languageCode; //countryCode.isNotEmpty ? '$languageCode-$countryCode' : languageCode;
   }
 }
