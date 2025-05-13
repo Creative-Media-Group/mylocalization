@@ -1,4 +1,4 @@
-library mylocalization;
+library;
 
 import 'dart:ui';
 
