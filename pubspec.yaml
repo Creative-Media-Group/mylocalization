@@ -1,6 +1,6 @@
 name: mylocalization
 description: A module for localization
-version: 0.0.9
+version: 0.0.10
 homepage: https://github.com/Creative-Media-Group/mylocalization
 repository: https://github.com/Creative-Media-Group/mylocalization
 environment:
